@@ -1,7 +1,10 @@
-import { Grid2 } from '@mui/material';
+import { Grid2 ,withStyles} from '@mui/material';
 import React, { Component } from 'react'
+import { Styles } from './Common/Style';
+import PropTypes from 'prop-types';
+// import { withStyles } from '@mui/styles';
 
-export default class FormComponents extends Component {
+ class FormComponents extends Component {
     render() {
         return (
             <>
@@ -12,3 +15,10 @@ export default class FormComponents extends Component {
         )
     }
 }
+
+
+FormComponents.propTypes = {
+    classes: PropTypes.object.isRequired,
+  };
+export default withStyles(Styles)(FormComponents);
+

@@ -4,6 +4,7 @@ export const Styles = {
            height:"98vh",
            display:"flex",
            flexFlow:"row wrap",
-           justifyContent:"center"
+           justifyContent:"center",
+           alignItem:"center"
     }
 }
